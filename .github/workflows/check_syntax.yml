@@ -1,4 +1,4 @@
-name: check_python_version
+name: check_syntax
 
 on:
   push:
