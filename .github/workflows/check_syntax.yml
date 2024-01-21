@@ -3,7 +3,7 @@ name: Check Syntax
 on:
   push:
     branches:
-      - check_syntax
+      - main
 
 jobs:
   check-syntax:
@@ -27,7 +27,8 @@ jobs:
         python -m pip install --upgrade pip
 
     - name: Install Flake8
-      run: pip install flake8
+      run: |
+        pip install flake8
 
     - name: Display Python version
       run: python --version
