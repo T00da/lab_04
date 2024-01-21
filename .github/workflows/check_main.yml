@@ -34,4 +34,4 @@ jobs:
         run: flake8
 
       - name: Run Unittest
-        run: python unittest2
+        run: python -m unittest2 discover -s . -p 'test*.py'
